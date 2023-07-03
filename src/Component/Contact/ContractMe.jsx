@@ -29,7 +29,7 @@ const ContractMe = () => {
       <h1 className="text-center text-2xl font-bold my-4">Contract me</h1>
       <div className="lg:flex rounded-md bg-gradient-to-r from-violet-300 to-teal-200 p-10">
         <div className='lg:w-1/2'>
-            <img src="../../../public/Img/img-global-work.webp" alt="" />
+            <img data-aos="fade-down-right" src="https://i.ibb.co/z8WKMCX/img-global-work.webp" alt="" />
             </div>
         <div className='lg: w-1/2 p-4 text-center flex items-center justify-center ml-auto mr-auto'>
           <form ref={form} onSubmit={sendEmail}>

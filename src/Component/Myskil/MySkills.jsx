@@ -4,7 +4,7 @@ import {  FaHtml5, FaJsSquare, FaLeaf, FaNodeJs, FaReact } from 'react-icons/fa'
 const MySkills = () => {
     return (
         <>
-        <h1 className='text-center text-2xl py-4'>My Skills</h1>
+        <h1 className='text-center text-2xl py-4 font-bold'>My Skills</h1>
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-2'>
             <div className='bg-gradient-to-r from-purple-400 to-cyan-200 h-32 rounded-md'>
                 <p className='text-center flex justify-center items-center mt-4 text-5xl text-orange-700'><FaHtml5/></p>

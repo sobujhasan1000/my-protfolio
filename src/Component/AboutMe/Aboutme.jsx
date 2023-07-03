@@ -2,6 +2,10 @@ import React from 'react';
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const Aboutme = () => {
   const handleDownload = () => {
@@ -24,16 +28,16 @@ const Aboutme = () => {
 
   return (
     <div>
-      <div className=' rounded-md my-2 lg:flex bg-gradient-to-r from-zinc-400 to-slate-400'>
+      <div className=' rounded-md my-2 lg:flex bg-gradient-to-r from-violet-300 to-teal-200'>
         <div className='flex items-center justify-center lg:w-1/2'>
-          <div>
+          <div data-aos="fade-up-right">
             <h1 className='text-black text-lg font-semibold'>Hi my name is <br /><span className='text-3xl font-bold text-sky-900'>Md Mohidul Islam</span></h1>
             <h2 className='text-lg font-semibold text-black'>I am a MERN Stack Developer</h2>
             <button className='btn mt-4' onClick={handleDownload} >download my resume</button>
           </div>
         </div>
-        <div className=''>
-          <img className='rounded-md p-12' src="https://i.ibb.co/FXgTHXn/9531396059.jpg" alt="" />
+        <div data-aos="fade-up-right" className=''>
+          <img  className='rounded-md p-12' src="https://i.ibb.co/Zds2gGQ/output-onlinegiftools.gif" alt="" />
         </div>
       </div>
       {/* <Particles
