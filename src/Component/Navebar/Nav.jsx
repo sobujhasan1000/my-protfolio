@@ -3,7 +3,7 @@ import React from "react";
 const Nav = () => {
   return (
     <div>
-      <div className="navbar text-white rounded-md bg-gradient-to-r from-cyan-300 to-slate-600">
+      <div className="navbar text-white rounded-md bg-green-400">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Nav = () => {
           <a className="btn btn-ghost normal-case text-xl">Home</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-lg">
+          <ul className="menu menu-horizontal px-1 text-xl font-bold">
             <li>
               <a>About me</a>
             </li>

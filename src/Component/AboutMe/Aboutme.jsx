@@ -4,7 +4,6 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 AOS.init();
 
 const Aboutme = () => {
@@ -26,18 +25,28 @@ const Aboutme = () => {
 //     await console.log(container);
 // }, []);
 
+const skeyimg='https://i.ibb.co/2YzgrKS/skey.jpg';
+const bgimg={
+  backgroundImage:`url(${skeyimg})`,
+  backgroundSize: 'cover', 
+    backgroundRepeat: 'no-repeat', 
+    width: '100%',
+    height: '900px',
+}
+
   return (
     <div>
-      <div className=' rounded-md my-2 lg:flex bg-gradient-to-r from-violet-300 to-teal-200'>
+      <div style={bgimg}  className=' rounded-md lg:flex text-white'>
         <div className='flex items-center justify-center lg:w-1/2'>
           <div data-aos="fade-up-right">
-            <h1 className='text-black text-lg font-semibold'>Hi my name is <br /><span className='text-3xl font-bold text-sky-900'>Md Mohidul Islam</span></h1>
-            <h2 className='text-lg font-semibold text-black'>I am a MERN Stack Developer</h2>
+            <h1 className='text-xl font-semibold bg-teal-100 p-2 rounded-md my-2 text-black'>Hi there  i am <span className='text-emerald-400 font-bold text-2xl'>Mohidul Islam </span> </h1>
+            {/* <h2 className='text-3xl font-bold'>Md Mohidul Islam</h2> */}
+            <h2 className='text-2xl font-semibold'>I am a <span className='text-lime-400'>MERN</span> Stack Developer</h2>
             <button className='btn mt-4' onClick={handleDownload} >download my resume</button>
           </div>
         </div>
-        <div data-aos="fade-up-right" className=''>
-          <img  className='rounded-md p-12' src="https://i.ibb.co/Zds2gGQ/output-onlinegiftools.gif" alt="" />
+        <div data-aos="fade-up-left" className='flex items-center justify-center'>
+          <img  className='rounded-md h-[500px]' src="https://i.ibb.co/Zds2gGQ/output-onlinegiftools.gif" alt="" />
         </div>
       </div>
       {/* <Particles

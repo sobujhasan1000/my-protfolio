@@ -7,7 +7,7 @@ import ContractMe from '../Component/Contact/ContractMe';
 
 const Home = () => {
     return (
-        <div>
+        <div className="mx-2">
             <Nav></Nav>
             <Aboutme></Aboutme>
             <MySkills></MySkills>
