@@ -19,7 +19,7 @@ const MySkills = () => {
         <h1 className='text-center text-2xl py-4 font-bold'>My Skills</h1>
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-2 p-6 bg-green-500 w-3/5 m-auto '>
             {skills.map((sk,index=i)=>
-                <div key={index+1} className='bg-black h-32 rounded-md'>
+                <div key={index+1} className='bg-[#010101d1] h-32 rounded-md border-2 border-red-300'>
                 <p className='text-center flex justify-center items-center mt-4 text-5xl text-green-400'>{sk.icon}</p>
                 <h1 className='text-3xl text-white font-bold p-4 text-center'>{sk.lan}</h1>
             </div>
