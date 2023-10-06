@@ -37,16 +37,24 @@ const bgimg={
   return (
     <div>
       <div style={bgimg}  className=' rounded-md lg:flex text-white'>
-        <div className='flex items-center justify-center lg:w-1/2'>
-          <div data-aos="fade-up-right">
+        <div 
+         className='flex items-center justify-center lg:w-1/2'>
+          <div 
+          data-aos="fade-right"
+          data-aos-offset="500"
+          
+          >
             <h1 className='text-xl font-semibold bg-teal-100 p-2 rounded-md my-2 text-black'>Hi there  i am <span className='text-emerald-400 font-bold text-2xl'>Mohidul Islam </span> </h1>
             {/* <h2 className='text-3xl font-bold'>Md Mohidul Islam</h2> */}
             <h2 className='text-2xl font-semibold'>I am a <span className='text-lime-400'>MERN</span> Stack Developer</h2>
             <button className='btn mt-4' onClick={handleDownload} >download my resume</button>
           </div>
         </div>
-        <div data-aos="fade-up-left" className='flex items-center justify-center'>
-          <img  className='rounded-md h-[500px]' src="https://i.ibb.co/Zds2gGQ/output-onlinegiftools.gif" alt="" />
+        <div className='flex items-center justify-center'>
+          <img 
+          data-aos="fade-left"
+          data-aos-offset="500"
+          className='rounded-md h-[500px]' src="https://i.ibb.co/Zds2gGQ/output-onlinegiftools.gif" alt="" />
         </div>
       </div>
       {/* <Particles
