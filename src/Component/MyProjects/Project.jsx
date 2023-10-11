@@ -4,7 +4,7 @@ const Project = () => {
   return (
    <> 
    <h1 className="text-center text-white text-3xl font-medium my-4 mt-8">My project</h1>
-    <div className="grid lg:grid-cols-2 gap-6 p-6">
+    <div className="grid lg:grid-cols-2 gap-6 p-6 opacity-80">
       <div className="bg-green-400 p-4 rounded-md">
          <div className="gap-2">
           <img  

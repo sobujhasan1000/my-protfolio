@@ -36,17 +36,20 @@ const bgimg={
 
   return (
     <div>
-      <div style={bgimg}  className=' rounded-md lg:flex text-white'>
+      <div style={bgimg}  className=' rounded-md lg:flex text-white opacity-80'>
         <div 
          className='flex items-center justify-center lg:w-1/2'>
-          <div 
+          <div className='text-center'
           data-aos="fade-right"
           data-aos-offset="500"
-          
           >
-            <h1 className='text-xl font-semibold bg-teal-100 p-2 rounded-md my-2 text-black'>Hi there  i am <span className='text-emerald-400 font-bold text-2xl'>Mohidul Islam </span> </h1>
-            {/* <h2 className='text-3xl font-bold'>Md Mohidul Islam</h2> */}
-            <h2 className='text-2xl font-semibold'>I am a <span className='text-lime-400'>MERN</span> Stack Developer</h2>
+            <h1 className='text-xl font-semibold bg-teal-100 p-2 rounded-md my-2 text-black w-[350px] mx-auto'>Hi there  i am <span className='text-emerald-400 font-bold text-2xl'>Mohidul Islam </span> </h1>
+            <div>
+            <marquee behavior="scroll" direction="left">
+            <p className='text-2xl font-semibold'> I am a <span className='text-lime-400'>MERN</span> Stack Developer</p>
+              </marquee>
+            </div>
+              {/* <p className='text-2xl font-semibold'> I am a <span className='text-lime-400'>MERN</span> Stack Developer</p> */}
             <button className='btn mt-4' onClick={handleDownload} >download my resume</button>
           </div>
         </div>

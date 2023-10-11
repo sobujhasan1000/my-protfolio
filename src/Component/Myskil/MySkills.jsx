@@ -1,4 +1,5 @@
 import React from 'react';
+import ParticlesBg from '../Particles/ParticlesBg';
 import {  FaHtml5, FaJsSquare, FaLeaf, FaNodeJs, FaReact } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -18,20 +19,24 @@ const MySkills = () => {
     ]
 
     return (
-        <div>
+       <div>  
+        <ParticlesBg/>
         <h1 className='text-center text-2xl py-4 font-bold text-white'>My Skills</h1>
         <div 
         data-AOS="zoom-in" 
-        data-aos-offset="600"
+        data-aos-offset="300"
         className='grid grid-cols-2 lg:grid-cols-4 gap-2 p-6 bg-green-400 w-3/5 m-auto rounded-md'>
             {skills.map((sk,index=i)=>
-                <div key={index+1} className='bg-[#010101d1] h-32 rounded-md'>
-                <p className='text-center flex justify-center items-center mt-4 text-5xl text-green-400'>{sk.icon}</p>
-                <h1 className='text-xl text-white font-bold p-4 text-center'>{sk.lan}</h1>
+                <div key={index+1} className='bg-[#010101d1] rounded-md flex my-auto h-20'>
+                <p className='text-center my-auto mx-auto text-5xl text-green-400'>{sk.icon}</p>
+                <h1 className='text-xl my-auto mx-auto text-white font-bold p-4 text-center'>{sk.lan}</h1>
             </div>
             )}
         </div>
-        </div>
+       
+        
+        
+       </div>
     );
 };
 
